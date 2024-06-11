@@ -1,0 +1,29 @@
+/* stylelint-disable */
+.setLogo(@module; @position) {
+    background-image: url('../@{module}/images/team23-logo-black.svg');
+    background-repeat: no-repeat;
+    background-position: @position;
+    background-size: 60px;
+}
+
+.admin__page-nav {
+    &,
+    &._collapsed,
+    &._show,
+    &._collapsed._show {
+        &.team23-extensions {
+            .admin__page-nav-title,
+            .admin__page-nav-title:hover {
+                .setLogo(
+                    'Team23_Core',
+                    left 1.5rem center
+                );
+
+                > strong {
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+}
+/* stylelint-enable */

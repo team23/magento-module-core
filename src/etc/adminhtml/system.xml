@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="team23"
+             translate="label"
+             sortOrder="23000"
+             class="team23-extensions">
+            <label>TEAM23</label>
+        </tab>
+
+        <section id="team23"
+                 translate="label"
+                 type="text"
+                 sortOrder="99999"
+                 showInDefault="1"
+                 showInWebsite="0"
+                 showInStore="0">
+            <label>Information</label>
+            <tab>team23</tab>
+            <resource>Team23_Core::configuration</resource>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,33 @@
+{
+    "name": "team23/module-core",
+    "description": "The Core extension adds a TEAM23 tab with logo to adminhtml system settings.",
+    "homepage": "https://www.team23.de/",
+    "type": "magento2-module",
+    "version": "1.1.0",
+    "license": ["BSD-3-Clause"],
+    "authors": [
+        {
+            "name": "Team23 GmbH",
+            "email": "info@team23.de",
+            "homepage": "https://www.team23.de"
+        }
+    ],
+    "keywords": [
+        "Magento 2",
+        "TEAM23"
+    ],
+    "require": {
+        "php": "^7.4||^8.1",
+        "magento/framework": "^103.0",
+        "magento/module-backend": "^102.0",
+        "magento/module-config": "^101.2"
+    },
+    "autoload": {
+        "files": [
+            "src/registration.php"
+        ],
+        "psr-4": {
+            "Team23\\Core\\": "src"
+        }
+    }
+}
