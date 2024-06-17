@@ -3,7 +3,7 @@
     "description": "The Core extension adds a TEAM23 tab with logo to adminhtml system settings.",
     "homepage": "https://www.team23.de/",
     "type": "magento2-module",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "license": ["BSD-3-Clause"],
     "authors": [
         {
