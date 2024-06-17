@@ -1,0 +1,27 @@
+<table class="team23-extensions-table-container">
+    <thead class="team23-extensions-thead">
+        <tr class="team23-extensions-tr">
+            <th class="team23-extensions-th" data-bind="i18n: 'Name'"></th>
+            <th class="team23-extensions-th" data-bind="i18n: 'Description'"></th>
+            <th class="team23-extensions-th" data-bind="i18n: 'Version'"></th>
+        </tr>
+    </thead>
+
+    <tbody class="team23-extensions-tbody">
+    <!-- ko foreach: $data.modulesData -->
+        <tr class="team23-extensions-tr">
+            <td class="team23-extensions-td">
+                <span data-bind="text: $data.name"></span>
+            </td>
+
+            <td class="team23-extensions-td">
+                <span data-bind="text: $data.description"></span>
+            </td>
+
+            <td class="team23-extensions-td">
+                <span data-bind="text: $data.version"></span>
+            </td>
+        </tr>
+    <!-- /ko -->
+    </tbody>
+</table>

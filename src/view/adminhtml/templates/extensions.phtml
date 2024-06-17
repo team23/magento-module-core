@@ -1,0 +1,25 @@
+<?php
+/**
+ * @var \Magento\Framework\Escaper $escaper
+ * @var \Team23\Core\Block\Adminhtml\InstalledExtensions $block
+ */
+?>
+
+<!-- ko scope: 'team23_extensions' -->
+<!-- ko template: getTemplate() --><!-- /ko-->
+<!-- /ko-->
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "team23_extensions": {
+                        "component": "Team23_Core/js/extensions",
+                        "modulesData": <?= /* @noEscape */ $block->getModulesData() ?>
+                    }
+                }
+            }
+        }
+    }
+</script>
