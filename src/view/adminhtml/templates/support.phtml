@@ -1,0 +1,18 @@
+<?php
+/**
+ * @var \Magento\Framework\Escaper $escaper
+ * @var \Team23\Core\Block\Adminhtml\GetSupport $block
+ */
+?>
+
+<h2 class="team23-page-title">
+    <?= $escaper->escapeHtml(__('Support')); ?>
+</h2>
+
+<div class="team23-support-info-block">
+    <div class="message message-notice success">
+        <div data-ui-id="messages-message-success">
+            <?= $escaper->escapeHtml($block->getSupportMessage(), ['a']); ?>
+        </div>
+    </div>
+</div>

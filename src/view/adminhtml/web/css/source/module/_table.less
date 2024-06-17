@@ -1,0 +1,45 @@
+/* stylelint-disable no-duplicate-selectors */
+.team23-extensions-table {
+    & {
+        background: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 13px rgba(95, 146, 247, .13);
+        margin-top: 30px;
+        padding: 15px 30px 30px;
+        text-align: left;
+    }
+
+    .team23-extensions-thead .team23-extensions-tr,
+    .team23-extensions-tbody .team23-extensions-tr:not(:last-child) {
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .team23-extensions-tbody {
+        display: block;
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    .team23-extensions-th {
+        color: #adadad;
+    }
+
+    .team23-extensions-td,
+    .team23-extensions-th {
+        padding: 15px 0;
+    }
+
+    .team23-extensions-tr {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+}
+
+.team23-extensions-table-container {
+    & {
+        width: 100%;
+    }
+}
+
+/* stylelint-enable no-duplicate-selectors */
